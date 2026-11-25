@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "Prompt.StreamingSample": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "OpenAI__ApiKey": "",
+        "AzureOpenAI__Endpoint": ""
+      }
+    }
+  }
+}
