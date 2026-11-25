@@ -1,7 +1,7 @@
-﻿using Microsoft.SemanticKernel;
+﻿using System.Diagnostics;
 using Microsoft.SemanticKernel.Connectors.OpenAI;
+using Microsoft.SemanticKernel;
 using Prompt.StreamingSample;
-using System.Diagnostics;
 
 Kernel kernel = Kernel.CreateBuilder()
     .AddOpenAIChatCompletion(

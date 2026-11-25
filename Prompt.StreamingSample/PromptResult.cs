@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Prompt.StreamingSample
 {
-    internal class PromptResult
+    internal sealed class PromptResult
     {
         public PromptResult() { }
 
