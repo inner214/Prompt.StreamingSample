@@ -13,12 +13,12 @@ Kernel kernel = Kernel.CreateBuilder()
 OpenAIPromptExecutionSettings executionSettings = new OpenAIPromptExecutionSettings
 {
     ResponseFormat = typeof(PromptResult),
-    ReasoningEffort = "MINIMAL"
+    ReasoningEffort = "LOW"
 };
 
 KernelArguments kernelArguments = new KernelArguments(executionSettings);
 
-int count = 75;
+int count = 100;
 string prompt = $"Generate {count} funny company names.";
 IAsyncEnumerable<StreamingKernelContent> results = kernel.InvokePromptStreamingAsync(prompt, kernelArguments);
 
